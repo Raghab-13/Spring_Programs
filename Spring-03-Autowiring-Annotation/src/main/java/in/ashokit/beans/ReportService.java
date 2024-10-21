@@ -16,7 +16,8 @@ public class ReportService {
 	public void setReport(ReportDao dao) {
 		this.dao=dao;
 	}
-	
+
+	//constructor- DI
 //	public ReportService(ReportDao dao) {
 //		System.out.println("report service constructor");
 //		this.dao=dao;
