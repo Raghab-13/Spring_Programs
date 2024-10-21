@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	 <!-- Thid is For Xml Approach -->
+   <!--   <bean  class="in.ashokit.Xml_Approach.UserDao"  
+  		 init-method="start"
+  		 destroy-method="closed"/> -->
+  		 
+  		 <!-- this is for Programmatic Approach -->
+  		  <bean  class="in.ashokit.Pragrammatic_Approach.UserDao2" />
+</beans>
