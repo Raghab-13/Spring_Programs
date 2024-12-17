@@ -24,9 +24,15 @@ public class StudentController {
 	@PostMapping("/save")
 	public String handleSubmitBtn(Student s,Model model ) {
 		
-		System.out.println(s);
+//		System.out.println(s);
+		
+		boolean isSaved = service.saveStudent(s);
+		if(isSaved) {
+			model.addAttribute("msg","Data saved.....");
+		}
+		
 		formInitBinding(model);
-		model.addAttribute("msg","Data saved.....");
+		
 		return "index";
 	}
 
