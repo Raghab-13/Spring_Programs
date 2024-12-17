@@ -24,6 +24,8 @@ public class StudentService {
 		
 		//binding object copy into entity object
 		BeanUtils.copyProperties(student, entity);
+		
+		//convert String[] to String type because variable-type  of the source and the target class is not same
 		entity.setTimings(Arrays.toString(student.getTimings()));
 		System.out.println(entity);
 		repo.save(entity);
